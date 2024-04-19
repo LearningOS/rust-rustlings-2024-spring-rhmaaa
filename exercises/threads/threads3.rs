@@ -20,9 +20,11 @@ impl Queue {
             length: 10,
             first_half: vec![1, 2, 3, 4, 5],
             second_half: vec![6, 7, 8, 9, 10],
+     
         }
     }
 }
+// 没搞懂
 
 fn send_tx(q: Queue, tx: mpsc::Sender<u32>) -> () {
     let qc = Arc::new(q);
