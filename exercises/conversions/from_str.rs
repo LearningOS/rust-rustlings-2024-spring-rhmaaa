@@ -18,6 +18,7 @@ struct Person {
     age: usize,
 }
 
+
 // We will use this error type for the `FromStr` implementation.
 #[derive(Debug, PartialEq)]
 enum ParsePersonError {
